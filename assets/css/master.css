@@ -28,8 +28,74 @@ a {
   color: #3367d6;
 }
 
+header {
+  position: fixed;
+  width: 100vw;
+  background-color: #fff;
+}
+header .nav-top {
+  height: 48px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-top .nav-left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5f6368;
+  font-size: 22px;
+}
+header .nav-top .nav-left a svg {
+  margin-top: 5px;
+}
+header .nav-top .nav-left a .privacy-title {
+  padding-left: 8px;
+  font-weight: 400;
+}
+header .nav-top .nav-right {
+  padding: 8px;
+}
+header .nav-top .nav-right .fa-th {
+  font-size: 24px;
+  color: #5f6368;
+}
+header .nav-top .nav-right .fa-user-circle {
+  font-size: 32px;
+  padding-left: 20px;
+  color: #0097a7;
+}
+header .nav-bot {
+  padding: 0 40px 10px;
+}
+header .nav-bot ul {
+  display: flex;
+  list-style: none;
+}
+header .nav-bot ul li {
+  margin-right: 40px;
+}
+header .nav-bot ul li a {
+  color: #5f6368;
+  font-size: 15px;
+  font-weight: 500;
+}
+header .nav-bot ul li .active {
+  color: #3367d6;
+  border-bottom: 3px solid #3367d6;
+  padding-bottom: 8px;
+}
+header .divider {
+  border-bottom: 1px solid #5f6368;
+}
+
+main {
+  padding-top: 150px;
+}
 main .container {
   width: 80%;
+  max-width: 980px;
   margin: 0 auto;
 }
 main .container li {
@@ -43,4 +109,44 @@ main .container ol {
 }
 main .container ol li ol {
   padding-left: 35px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #eee;
+  height: 45px;
+}
+footer .container {
+  width: 80%;
+  max-width: 980px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container ul {
+  display: flex;
+  list-style: none;
+  font-size: 11px;
+  font-weight: 300;
+}
+footer .container ul li {
+  padding-right: 10px;
+}
+footer .container ul li a {
+  color: rgba(61, 61, 61, 0.8);
+}
+footer .container .footer-right .fa-globe {
+  color: #fff;
+  background-color: #299cf6;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+footer .container .footer-right select {
+  margin-left: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  width: 150px;
 }
